@@ -1,4 +1,4 @@
-# ci-cms
+# CI-CMS
 CodeIgniter based content management system
 
 # Installation
