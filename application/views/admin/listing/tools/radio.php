@@ -1,0 +1,1 @@
+<a href="<?= $url ?>" data-href="<?= $url ?>" class="radio radio_link radio_<?= ($checked) ? 'on' : 'off' ?> tiptip<?= (strlen($data_text)) ? ' confirm_link' : '' ?>" data-text="<?= $data_text ?>" data-title="<?= $data_title ?>" data-page="tiptip" data-tip="right" title="<?= $title ?>"></a>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fields>
+    
+    <field type="input">
+        <param>input</param>
+        <param>Title</param>
+        <param>Value (parameter 1)</param>
+        <param>Placeholder... (parameter 2)</param>
+    </field>
+
+    <field type="buttons"></field>
+
+</fields>

@@ -1,0 +1,1 @@
+<script>page.variant_areas();</script>

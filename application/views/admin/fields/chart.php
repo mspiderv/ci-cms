@@ -1,0 +1,1 @@
+<div class="chart_container" data-page="chart" data-chart="<?= $id ?>" id="chart-<?= $id ?>">Graf sa nepodarilo vygenerovať.</div>

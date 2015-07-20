@@ -1,0 +1,7 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+interface IFormFieldDynamic {
+    
+    public function set();
+    
+}

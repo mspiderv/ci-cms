@@ -1,0 +1,244 @@
+table.datatable {
+    width: 100%;
+}
+.dataTables_info {
+    float: left;
+    margin-left: 5px;
+}
+.dataTables_paginate {
+    float: right;
+}
+.dataTables_paginate .fg-button {
+    margin-left: 5px;
+}
+.fg-toolbar {
+    padding-top: 5px;
+    font-size: 0.8em;
+    background-image: url(../../../jquery-ui/css/custom-theme/images/ui-bg_highlight-soft_50_dddddd_1x100.png)!important;
+    background-repeat: repeat-x;
+}
+.jui_tabs .fg-toolbar.ui-corner-tr {
+    background: #f9f9f9!important;
+    border-top: 0px;
+}
+.fg-toolbar.ui-corner-tr {
+    padding: 5px 10px;
+}
+.fg-toolbar .dataTables_length {
+    float: left;
+    margin-top: 3px;
+}
+.fg-toolbar .dataTables_length select {
+    font-size: 1em;
+}
+.fg-toolbar .dataTables_filter {
+    float: right;
+}
+.datatable tbody tr td {
+    height: 25px;
+    line-height: 25px;
+    border-top: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    background-color: #fff;
+    text-align: center;
+}
+.datatable tbody tr td.align_left {
+    padding-left: 10px;
+    text-align: left;
+}
+.datatable tbody tr td.align_right {
+    padding-right: 10px;
+    text-align: right;
+}
+.datatable.datatable-sorting tbody tr td {
+    padding-left: 26px;
+}
+.datatable.datatable-sorting tbody tr td.align_left {
+    padding-left: 10px;
+}
+.datatable.datatable-sorting tbody tr td.align_right {
+    padding-left: 0px;
+}
+.datatable tbody tr td .radio {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: 3px;
+    margin-top: -1px;
+}
+.datatable tbody tr td .radio.radio_link {
+    top: 5px;
+}
+.datatable tbody tr td .radio.radio_on {
+    background-image: url(../../../admin/data/radio_on.png);
+}
+.datatable tbody tr td .radio.radio_off {
+    background-image: url(../../../admin/data/radio_off.png);
+}
+.datatable tbody tr td .checkbox {
+    display: inline-block;
+    width: 41px;
+    height: 21px;
+    position: relative;
+    top: 4px;
+    background-image: url(../../../checkbox/images/checkbox.png);
+}
+.datatable tbody tr td .checkbox.checkbox_on {
+    background-position: 0px 22px;
+}
+.datatable tbody tr td .checkbox.checkbox_on:hover {
+    background-position: 41px 22px;
+}
+.datatable tbody tr td .checkbox.checkbox_off {
+    background-position: 0px -1px;
+}
+.datatable tbody tr td .checkbox.checkbox_off:hover {
+    background-position: 41px -1px;
+}
+.datatable tbody tr td .input {
+    border: 0px;
+    height: 20px;
+    padding: 3px 2%;
+    width: 96%;
+    background-color: transparent;
+    font-size: 1em;
+    color: #444;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #EEE), color-stop(15%, white));
+    background-image: -webkit-linear-gradient(top, #EEE 1%, white 15%);
+    background-image: -moz-linear-gradient(top, #EEE 1%, white 15%);
+    background-image: -o-linear-gradient(top, #EEE 1%, white 15%);
+    background-image: -ms-linear-gradient(top, #EEE 1%, white 15%);
+    background-image: linear-gradient(top, #EEE 1%, white 15%);
+}
+.datatable tbody tr:nth-child(2n) td .input {
+    background-color: #F5F3F3;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #e9e5e5), color-stop(15%, #F5F3F3));
+    background-image: -webkit-linear-gradient(top, #e9e5e5 1%, #F5F3F3 15%);
+    background-image: -moz-linear-gradient(top, #e9e5e5 1%, #F5F3F3 15%);
+    background-image: -o-linear-gradient(top, #e9e5e5 1%, #F5F3F3 15%);
+    background-image: -ms-linear-gradient(top, #e9e5e5 1%, #F5F3F3 15%);
+    background-image: linear-gradient(top, #e9e5e5 1%, #F5F3F3 15%);
+}
+.datatable tbody tr td .input:focus {
+    background-color: #fff!important;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #EEE), color-stop(15%, white));
+    background-image: -webkit-linear-gradient(top, #EEE 1%, white 15%);
+    background-image: -moz-linear-gradient(top, #EEE 1%, white 15%);
+    background-image: -o-linear-gradient(top, #EEE 1%, white 15%);
+    background-image: -ms-linear-gradient(top, #EEE 1%, white 15%);
+    background-image: linear-gradient(top, #EEE 1%, white 15%);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,.3);
+    -o-box-shadow: 0 0 5px rgba(0,0,0,.3);
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+.datatable tbody.ui-sortable-sorting tr.ui-sortable-unactive td {
+    background-color: #fff!important;
+    opacity: 0.2;
+}
+.datatable tbody.ui-sortable-sorting tr:not(.ui-sortable-unactive) td {
+    background-color: #ededed!important;
+    border-color: #ededed!important;
+}
+.datatable tbody tr.even.ui-sortable-helper td {
+    border-bottom: 1px solid #DDD;
+}
+.datatable tbody tr td a {
+    display: inline-block;
+    color: #FF6C00;
+}
+.datatable tbody tr td .pre {
+    float: left;
+    margin-top: 5px;
+    opacity: 0.2;
+}
+.datatable tbody tr td .jui_icon {
+    width: 17px;
+    height: 17px;
+    padding: 0px;
+}
+.datatable tbody tr td .jui_icon .ui-icon {
+    margin: 0px;
+}
+.datatable tbody tr td .handle {
+    float: left;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    opacity: 0.2;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+.datatable tbody tr td:hover .handle {
+    opacity: 1;
+}
+.datatable tbody tr td a:hover {
+    color: #555;
+    text-decoration: none;
+}
+.datatable tbody tr:nth-child(2n) td {
+    background-color: #F5F3F3;
+}
+.datatable tbody tr:hover td,
+.datatable tbody tr:hover td .input {
+    background: none;
+    background-color: #FDEBBA;
+}
+.datatable tbody tr:first-child td {
+    border-top: 0px;
+}
+.datatable tbody tr td:first-child {
+    border-left: 1px solid #DDD;
+}
+.datatable thead tr th {
+    border: 1px solid #DDD!important;
+    border-left: 0px!important;
+    border-top: 0px!important;
+}
+.datatable thead tr th:first-child {
+    border-left: 1px solid #DDD!important;
+}
+.DataTables_sort_wrapper {
+    padding: 8px 0px;
+}
+.datatable-sorting .DataTables_sort_wrapper {
+    cursor: pointer;
+}
+.datatable-sorting thead tr th:hover {
+    background-position: bottom center;
+}
+.DataTables_sort_wrapper .DataTables_sort_icon {
+    float: left;
+    margin-left: 10px;
+}
+.dataTables_filter input {
+    border: 1px solid #BBB;
+    border-right-color: #CCC;
+    border-bottom-color: #CCC;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 11px;
+    color: #333;
+    padding: 3px;
+    width: 50px;
+    transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -o-transition: width 0.5s;
+}
+.dataTables_filter input:focus {
+    width: 150px;
+}
+.dataTables_empty {
+    font-weight: bold;
+    padding: 5px 0px;
+}
+.dataTables_wrapper .ui-buttonset .ui-button {
+    margin-right: 0px;
+}

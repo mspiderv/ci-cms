@@ -1,0 +1,2 @@
+<input type="text" name="<?= $name ?>" value="<?= $value ?>" class="jui_slider_field fv" id="<?= $field_id ?>">
+<div class="jui_slider" data-page="slider" data-name="<?= $name ?>" data-min="<?= $min ?>" data-max="<?= $max ?>" data-step="<?= $step ?>"></div>

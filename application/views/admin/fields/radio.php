@@ -1,0 +1,1 @@
+<label class="radio tiptip" for="<?= $field_id ?>" title="<?= $title ?>" data-page="tiptip" data-tip="right"><input type="radio" name="<?= $name ?>" value="<?= $value ?>" id="<?= $field_id ?>" class="radio" data-page="ezmark" <?= $selected ?>><?= $description ?></label>

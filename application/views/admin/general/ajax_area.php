@@ -1,0 +1,1 @@
+<div class="ajax_area" data-ajax_method="<?= $ajax_method ?>" data-handlers="<?= implode(',', $handlers) ?>" data-page="ajax_area"></div>

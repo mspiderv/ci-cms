@@ -1,0 +1,4 @@
+CKEDITOR.plugins.setLang('cms_panels', 'sk', {
+	title: 'Element Information',
+	panelVoiceLabel: 'Element Information'
+});

@@ -1,0 +1,2 @@
+<input type="hidden" name="<?= $name ?>" id="<?= $field_id ?>" value="<?= $value ?>" class="fv" />
+<div class="color_picker" data-value="<?= $value ?>" data-name="<?= $name ?>" id="<?= $field_id ?>_colorpicker" data-page="colorpicker" style="background-color: <?= $value ?>;"></div>

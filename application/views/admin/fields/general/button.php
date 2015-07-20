@@ -1,0 +1,1 @@
+<a href="<?= $url ?>" class="jui_button ui-state-default <?= $classes ?>" <?= $data ?>><span class="ui-icon <?= $type ?>"></span><?= $text ?></a>

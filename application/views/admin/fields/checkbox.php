@@ -1,0 +1,1 @@
+<label class="checkbox fv" for="<?= $field_id ?>"><input name="<?= $name ?>" id="<?= $field_id ?>" type="checkbox" value="<?= cfg('form', 'true') ?>" class="checkbox" data-page="ezmark" <?= set_checkbox($name, cfg('form', 'true'), $checked) ?>><?= $description ?></label>

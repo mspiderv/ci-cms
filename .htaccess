@@ -1,0 +1,15 @@
+RewriteEngine on
+
+# Redirect to www variant
+RewriteCond %{HTTP_HOST} ^{{SITE}}\.sk
+RewriteRule (.*) http://www.{{SITE}}.sk/$1 [R=301,QSA,L]
+
+# Images
+RewriteRule ^image-max/([^/]*)/([^/]*)/(.*)$ get_image.php?img=$3&width=$1&height=$2
+RewriteRule ^image-min/([^/]*)/([^/]*)/(.*)$ get_image.php?img=$3&width=$1&height=$2&minimum=1
+
+# System redirect
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|assets|user_guide|robots\.txt)
+RewriteRule ^(.*)$ /?index.php/$1 [L]

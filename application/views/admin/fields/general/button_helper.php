@@ -1,0 +1,1 @@
+<span class="jui_button ui-state-default button_helper" data-page="button_helper" data-text="<?= $text ?>" data-title="<?= $title ?>"><span class="ui-icon ui-icon-lightbulb"></span><?= $title ?></span>

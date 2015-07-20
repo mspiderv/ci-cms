@@ -1,0 +1,4 @@
+CKEDITOR.plugins.setLang('cms_positions', 'en', {
+	singluar: 'Pozícia',
+	plurar: 'Pozície'
+});
