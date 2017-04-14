@@ -6,7 +6,7 @@ class CMS_Lang extends CI_Lang {
     protected $loaded_langs = array();
     protected $langfile_suffix = '_lang';
     
-    function load($langfile = '', $idiom = '')
+    function load($langfile = '', $idiom = '', $return = FALSE, $add_suffix = TRUE, $alt_path = '')
     {
         if(strlen($idiom) == 0)
         {
