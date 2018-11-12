@@ -54,7 +54,7 @@ if(is_localhost())
     $db['default']['username'] = 'root';
     $db['default']['password'] = '';
     $db['default']['database'] = '{{SITE}}';
-    $db['default']['dbdriver'] = 'mysql';
+    $db['default']['dbdriver'] = 'mysqli';
     $db['default']['dbprefix'] = 'cms_';
     $db['default']['pconnect'] = TRUE;
     $db['default']['db_debug'] = TRUE;
@@ -72,7 +72,7 @@ else
     $db['default']['username'] = '';
     $db['default']['password'] = '';
     $db['default']['database'] = '';
-    $db['default']['dbdriver'] = 'mysql';
+    $db['default']['dbdriver'] = 'mysqli';
     $db['default']['dbprefix'] = 'cms_';
     $db['default']['pconnect'] = TRUE;
     $db['default']['db_debug'] = FALSE;

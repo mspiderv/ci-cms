@@ -87,7 +87,7 @@ class Uni_model extends CI_Model {
 
     protected function _init_db_object()
     {
-        $db_object =& $this->cms->model->get_db_object();
+        $db_object = $this->cms->model->get_db_object();
         if($db_object instanceof CI_DB_result) $this->db_object =& $db_object;
     }
 
