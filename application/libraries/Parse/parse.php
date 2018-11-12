@@ -426,8 +426,12 @@ class Parse extends CI_Driver_Library {
         
         $email_pattern = '[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}';
 
-        $string = preg_replace_callback('/<a(.*?)>(' . $email_pattern . ')<\/a>/', create_function('$data', 'return safe_mailto($data[2]);'), $string);
-        $string = preg_replace_callback('/' . $email_pattern . '/', create_function('$data', 'return safe_mailto($data[0]);'), $string);
+        $string = preg_replace_callback('/<a(.*?)>(' . $email_pattern . ')<\/a>/', function($data) {
+            return safe_mailto($data[2]);
+        }, $string);
+        $string = preg_replace_callback('/' . $email_pattern . '/', function ($data) {
+            return safe_mailto($data[0]);
+        }, $string);
 
         return $string;
     }
@@ -435,10 +439,14 @@ class Parse extends CI_Driver_Library {
     function parse_text_panels($string)
     {
         /* {PANEL:1} */
-        $string = preg_replace_callback('/(\/){0,1}{' . cfg('parser_val', 'panel') . ':([0-9]*)}/', create_function('$data', 'return generate("panel_id", $data[2]);'), $string);
+        $string = preg_replace_callback('/(\/){0,1}{' . cfg('parser_val', 'panel') . ':([0-9]*)}/', function ($data) {
+            return generate("panel_id", $data[2]);
+        }, $string);
 
         /* {PANEL:panel_code} */
-        $string = preg_replace_callback('/(\/){0,1}{' . cfg('parser_val', 'panel') . ':([a-zA-Z0-9-]*)}/', create_function('$data', 'return generate("panel", $data[2]);'), $string);
+        $string = preg_replace_callback('/(\/){0,1}{' . cfg('parser_val', 'panel') . ':([a-zA-Z0-9-]*)}/', function ($data) {
+            return generate("panel", $data[2]);
+        }, $string);
 
         return $string;
     }
@@ -446,10 +454,14 @@ class Parse extends CI_Driver_Library {
     function parse_text_positions($string)
     {
         /* {POSITION:1} */
-        $string = preg_replace_callback('/(\/){0,1}{' . cfg('parser_val', 'position') . ':([0-9]*)}/', create_function('$data', 'return generate("position_id", $data[2]);'), $string);
+        $string = preg_replace_callback('/(\/){0,1}{' . cfg('parser_val', 'position') . ':([0-9]*)}/', function ($data) {
+            return generate("position_id", $data[2]);
+        }, $string);
 
         /* {POSITION:position_code} */
-        $string = preg_replace_callback('/(\/){0,1}{' . cfg('parser_val', 'position') . ':([a-zA-Z0-9-]*)}/', create_function('$data', 'return generate("position", $data[2]);'), $string);
+        $string = preg_replace_callback('/(\/){0,1}{' . cfg('parser_val', 'position') . ':([a-zA-Z0-9-]*)}/', function ($data) {
+            return generate("position", $data[2]);
+        }, $string);
 
         return $string;
     }
@@ -459,10 +471,14 @@ class Parse extends CI_Driver_Library {
         /* {HREF:page:1:sk}, {HREF:service:2:en} ... */
         $this->CI->cms->model->load_system('langs');
         $langs = implode('|', $this->CI->s_langs_model->get_data_in_col('lang'));
-        $string = preg_replace_callback('/(\/){0,1}{' . cfg('parser_val', 'href') . ':(page|product|category|service):([0-9]*):(' . $langs . ')}/', create_function('$data', 'return href_by_type($data[2], $data[3], $data[4]);'), $string);
+        $string = preg_replace_callback('/(\/){0,1}{' . cfg('parser_val', 'href') . ':(page|product|category|service):([0-9]*):(' . $langs . ')}/', function ($data) {
+            return href_by_type($data[2], $data[3], $data[4]);
+        }, $string);
         
         /* {HREF:page:1} */
-        $string = preg_replace_callback('/(\/){0,1}{' . cfg('parser_val', 'href') . ':(page|product|category|service):([0-9]*)}/', create_function('$data', 'return href_by_type($data[2], $data[3]);'), $string);
+        $string = preg_replace_callback('/(\/){0,1}{' . cfg('parser_val', 'href') . ':(page|product|category|service):([0-9]*)}/', function ($data) {
+            return href_by_type($data[2], $data[3]);
+        }, $string);
         
         return $string;
     }
